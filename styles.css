@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+    
+}
+
+header {
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(191, 252, 191);
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    gap: 100px;
+}
