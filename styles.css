@@ -1,12 +1,13 @@
 body {
     margin: 0;
-    
+    font-family: Arial, Helvetica, sans-serif
 }
 
 header {
-    border-width: 2px;
+    border-width: 3px;
     border-style: solid;
-    border-color: rgb(191, 252, 191);
+    border-color: rgba(139, 255, 139, 0.518);
+    background-color: rgb(200, 229, 255);
 }
 
 ul {
@@ -16,4 +17,15 @@ ul {
     align-items: center;
     list-style-type: none;
     gap: 100px;
+}
+
+section {
+    height: 100vh;
+    background-color: rgb(200, 229, 255);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(200, 229, 255);
 }
