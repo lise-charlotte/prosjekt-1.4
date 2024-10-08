@@ -1,13 +1,33 @@
 body {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
 }
+
+/* Jeg har eksperimentert i CSS her og tror det er noe som ikke funker, men ser ikke helt hva. Kunne jeg fått hjelp med å identifisere hva som er "død" kode? Jeg prøvde å få inn mellomrom for litt ryddigere utseende, fikk det ikke til.*/
+/* I tillegg ser jeg at når jeg inspiserer på siden, så er det plutselig kommet en hvit blokk til høyre hvor teksten fortsetter på. Hvordan fjerner jeg den? */
 
 header {
     border-width: 3px;
     border-style: solid;
     border-color: rgba(139, 255, 139, 0.518);
     background-color: rgb(200, 229, 255);
+}
+
+a:link {
+    color: green
+}
+
+a:visited {
+    color: green
+}
+
+a:hover {
+    color: green
+}
+
+a:active {
+    color: green
 }
 
 ul {
@@ -19,9 +39,44 @@ ul {
     gap: 100px;
 }
 
+main {
+    text-align: center;
+}
+
 section {
-    height: 100vh;
+    height: 45vh;
     background-color: rgb(200, 229, 255);
+}
+
+ol {
+    list-style-type: none;
+}
+
+p {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0;
+}
+
+pre {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0;
+    gap: 40px;
+}
+
+.textSpacing {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
 }
 
 footer {
