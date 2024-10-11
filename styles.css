@@ -8,10 +8,9 @@ body {
 /* I tillegg ser jeg at når jeg inspiserer på siden, så er det plutselig kommet en hvit blokk til høyre hvor teksten fortsetter på. Hvordan fjerner jeg den? */
 
 header {
-    border-width: 3px;
-    border-style: solid;
-    border-color: rgba(139, 255, 139, 0.518);
+    border-bottom: 2px solid #073B3A;
     background-color: rgb(200, 229, 255);
+    padding-top: 2px;
 }
 
 a:link {
@@ -49,6 +48,7 @@ section {
 }
 
 ol {
+    justify-content: center;
     list-style-type: none;
 }
 
@@ -60,6 +60,9 @@ p {
 }
 
 pre {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -78,9 +81,27 @@ h3 {
     justify-content: center;
     gap: 20px;
 }
+/* Mangler jeg noe kode her? Tror ikke denne funker */
 
 footer {
     display: flex;
     justify-content: center;
     background-color: rgb(200, 229, 255);
+}
+
+.prosjekter {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    gap: 100px;
+}
+
+.hjem {
+    padding-top: 7px;
+}
+
+* {
+    box-sizing: border-box;
 }
