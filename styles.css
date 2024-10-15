@@ -9,7 +9,7 @@ body {
 
 header {
     border-bottom: 2px solid #073B3A;
-    background-color: rgb(200, 229, 255);
+    background-color: rgba(200, 229, 255, 0.744);
     padding-top: 2px;
 }
 
@@ -29,6 +29,10 @@ a:active {
     color: green
 }
 
+main {
+    text-align: center;
+}
+
 ul {
     display: flex;
     flex-direction: row;
@@ -36,15 +40,12 @@ ul {
     align-items: center;
     list-style-type: none;
     gap: 100px;
-}
-
-main {
-    text-align: center;
+    text-shadow: 0px 0px 3px #073B3A;
 }
 
 section {
-    height: 45vh;
-    background-color: rgb(200, 229, 255);
+    height: 50vh;
+    background-color: rgba(200, 229, 255, 0.744);
 }
 
 ol {
@@ -86,7 +87,7 @@ h3 {
 footer {
     display: flex;
     justify-content: center;
-    background-color: rgb(200, 229, 255);
+    background-color: rgba(200, 229, 255, 0.744);
 }
 
 .prosjekter {
@@ -104,4 +105,29 @@ footer {
 
 * {
     box-sizing: border-box;
+}
+
+/* Prosjekter CSS  */
+
+.homeSectionptwo {
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.secondSectionptwo {
+    height: 50vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 200px;
+    padding: 0px 100px;
+}
+
+.card {
+    width: 500px;
+    border: 2px solid #073B3A;
+    border-radius: 10px;
+    display: flex;
 }
