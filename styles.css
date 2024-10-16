@@ -4,9 +4,6 @@ body {
     color: black;
 }
 
-/* Jeg har eksperimentert i CSS her og tror det er noe som ikke funker, men ser ikke helt hva. Kunne jeg fått hjelp med å identifisere hva som er "død" kode? Jeg prøvde å få inn mellomrom for litt ryddigere utseende, fikk det ikke til.*/
-/* I tillegg ser jeg at når jeg inspiserer på siden, så er det plutselig kommet en hvit blokk til høyre hvor teksten fortsetter på. Hvordan fjerner jeg den? */
-
 header {
     border-bottom: 2px solid #073B3A;
     background-color: rgba(200, 229, 255, 0.744);
@@ -33,6 +30,13 @@ main {
     text-align: center;
 }
 
+p {
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+    margin: 0px;
+}
+
 ul {
     display: flex;
     flex-direction: row;
@@ -49,24 +53,33 @@ section {
     background-color: rgba(200, 229, 255, 0.744);
 }
 
-ol {
+.homeSection {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    list-style-type: none;
+    align-items: center;
+    gap: 10px;
+    padding-top: 5px;
 }
 
-p {
+.img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.parag1 {
+    width: 70%;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin: 0;
+    margin: 2px;
 }
 
-pre {
+.aboutSection {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    flex-direction: column;
 }
 
 h3 {
@@ -77,13 +90,18 @@ h3 {
     gap: 40px;
 }
 
+ol {
+    justify-content: center;
+    list-style-type: none;
+    margin: 2px;
+}
+
 .textSpacing {
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 20px;
 }
-/* Mangler jeg noe kode her? Tror ikke denne funker */
 
 footer {
     display: flex;
