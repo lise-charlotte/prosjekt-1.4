@@ -36,11 +36,12 @@ main {
 ul {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
     list-style-type: none;
     gap: 100px;
     text-shadow: 0px 0px 3px #073B3A;
+    padding: 0px 3px 0px 0px;
 }
 
 section {
@@ -90,15 +91,6 @@ footer {
     background-color: rgba(200, 229, 255, 0.744);
 }
 
-.prosjekter {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    list-style-type: none;
-    gap: 100px;
-}
-
 .hjem {
     padding-top: 7px;
 }
@@ -109,6 +101,16 @@ footer {
 
 /* Prosjekter CSS  */
 
+.prosjekter {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    list-style-type: none;
+    gap: 100px;
+    padding: 0px 3px 0px 0px;
+}
+
 .homeSectionptwo {
     height: 20vh;
     display: flex;
@@ -117,17 +119,34 @@ footer {
 }
 
 .secondSectionptwo {
-    height: 50vh;
+    height: 25vh;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    gap: 200px;
-    padding: 0px 100px;
+    gap: 20%;
+    padding: 0% 20%;
 }
 
 .card {
     width: 500px;
-    border: 2px solid #073B3A;
-    border-radius: 10px;
+    border: 2px solid #073b3a99;
+    border-radius: 9px;
     display: flex;
+}
+
+.cardText {
+    padding: 0px 2px;
+}
+
+.heading {
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+}
+
+.h3Ptwo {
+    width: 200px;
+    background-color: #073b3a56;
+    text-align: center;
+    padding: 4px 0px 0px 0px;
 }
