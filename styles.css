@@ -7,8 +7,11 @@ body {
 
 /* HEADER */
 header {
+    background-color: rgb(200, 229, 255);
     border-bottom: 2px solid #073B3A;
     padding-top: 2px;
+    position: sticky;
+    top: 0;
 }
 
 a:link {
@@ -34,7 +37,6 @@ ul {
     align-items: center;
     list-style-type: none;
     gap: 50px;
-    text-shadow: 0px 0px 3px #073B3A;
     padding: 0px 3px 0px 0px;
     margin: 5px;
 }
@@ -122,11 +124,7 @@ ol {
     box-sizing: border-box;
 }
 
-.bookmark1 {
-    text-shadow: 0px 0px 3px #073B3A;
-}
-
-/* Prosjekter CSS  */
+/* Prosjekter CSS aka side 2 */
 
 .prosjekter {
     display: flex;
@@ -138,7 +136,7 @@ ol {
     padding: 0px 3px 0px 0px;
 }
 
-.homeSectionptwo {
+.homeSection2 {
     height: 10vh;
     display: flex;
     justify-content: center;
@@ -189,13 +187,14 @@ footer {
     margin: 2px;
 }
 
-.bookmark2 {
-    text-shadow: 0px 0px 3px #073B3A;
-}
 
 /* MEDIA QUERY */
 @media (max-width: 426px) {
  body {
+    background-color: #f4bde2;
+ }
+
+ header {
     background-color: #f4bde2;
  }
 
