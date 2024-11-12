@@ -132,7 +132,7 @@ ol {
     justify-content: right;
     align-items: center;
     list-style-type: none;
-    gap: 100px;
+    gap: 50px;
     padding: 0px 3px 0px 0px;
 }
 
@@ -169,6 +169,51 @@ ol {
 
 .cardText {
     padding: 0px 2px;
+}
+
+.googleButton {
+
+}
+
+.googleButton > a:link {
+    color: rgb(70, 70, 70)
+}
+
+.googleButton > a:visited {
+    color: rgb(70, 70, 70)
+}
+
+.googleButton > a:hover {
+    color: rgb(70, 70, 70)
+}
+
+.googleButton > a:active {
+    color: grergb(70, 70, 70)en
+}
+
+.imgTransition {
+    max-width: 300px;
+    position: relative;
+    float: left;
+}
+
+.imgTransition .hoverImg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+}
+
+.imgTransition:hover .hoverImg {
+    display: block;
+}
+
+.mainImg {
+    max-width: 300px;
+}
+
+.hoverImg {
+    max-width: 300px;
 }
 
 /* FOOTER */
