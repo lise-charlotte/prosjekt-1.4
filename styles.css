@@ -171,24 +171,41 @@ ol {
     padding: 0px 2px;
 }
 
-.googleButton {
+.animaAndTrans {
+    height: 100vh;
+    gap: 20px;
+}
 
+.googleButton {
+    background-color: black;
+    padding: 10px;
+    width: 100px;
+    border-radius: 25px;
+    border-width: 0px;
+    border-color: rgb(211, 211, 211);
+    border-style: solid;
+    box-shadow: 2px 2px 3px rgb(98, 98, 98);
+    transition: 0.5s ease-in;
 }
 
 .googleButton > a:link {
-    color: rgb(70, 70, 70)
+    color: rgb(103, 103, 103)
 }
 
 .googleButton > a:visited {
-    color: rgb(70, 70, 70)
+    color: rgb(103, 103, 103)
 }
 
 .googleButton > a:hover {
-    color: rgb(70, 70, 70)
+    color: rgb(103, 103, 103)
 }
 
 .googleButton > a:active {
-    color: grergb(70, 70, 70)en
+    color: rgb(103, 103, 103)
+}
+
+.googleButton:hover {
+    background-color: rgb(145, 255, 145);
 }
 
 .imgTransition {
@@ -215,6 +232,42 @@ ol {
 .hoverImg {
     max-width: 300px;
 }
+
+.loader {
+    border: 12px solid #ffffff;
+    border-top: 12px solid rgb(0, 0, 0);
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: load 6s linear infinite;
+}
+
+@keyframes load {
+    0% {
+        transform: rotate(0);
+        border-top: 12px solid #FF9B54;
+    }
+    20% {
+        transform: rotate(72deg);
+        border-top: 12px solid #4F000B;
+    }
+    40% {
+        transform: rotate(144deg);
+        border-top: 12px solid #720026;
+    }
+    60% {
+        transform: rotate(216deg);
+        border-top: 12px solid #CE4257;
+    }
+    80% {
+        transform: rotate(288deg);
+        border-top: 12px solid #FF7F51;
+    }
+    100% {
+      transform: rotate(360deg);
+      border-top: 12px solid #FF9B54;
+    }
+  }
 
 /* FOOTER */
 footer {
